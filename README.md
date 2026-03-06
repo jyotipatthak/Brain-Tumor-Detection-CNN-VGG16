@@ -349,9 +349,9 @@ Python | TensorFlow/Keras | OpenCV | Scikit-learn
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
-- Email: your.email@example.com
+- GitHub: [@YOUR_USERNAME](https://github.com/jyotipatthak)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/jyotipathak123)
+
 
 ---
 
