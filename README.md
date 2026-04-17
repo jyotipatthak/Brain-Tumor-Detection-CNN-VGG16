@@ -1,4 +1,4 @@
-# 🧠 Brain Tumor Detection using CNN + VGG16 Transfer Learning
+#  Brain Tumor Detection using CNN + VGG16 Transfer Learning
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>
@@ -45,7 +45,7 @@ Brain tumor detection from MRI scans is a critical task in medical image analysi
 
 ---
 
-## 🎬 Demo
+##  Demo
 
 ```
 Input MRI Image  →  YOLOv8 Detection  →  Prediction Output
@@ -56,11 +56,11 @@ Input MRI Image  →  YOLOv8 Detection  →  Prediction Output
 | ![tumor](https://via.placeholder.com/100x100/FF0000/FFFFFF?text=MRI) | 🔴 TUMOR DETECTED | 97.3% |
 | ![no_tumor](https://via.placeholder.com/100x100/00FF00/FFFFFF?text=MRI) | 🟢 NO TUMOR | 94.1% |
 
-> 💡 Upload any MRI image in the notebook to get an instant prediction!
+>  Upload any MRI image in the notebook to get an instant prediction!
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 **Source:** [Brain MRI Images for Brain Tumor Detection — Kaggle](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
 
@@ -77,7 +77,7 @@ brain_data/
 | **Total** | **253** | **100%** |
 
 ### Download Instructions
-1. Go to 👉 https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
+1. Go to  https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
 2. Click **Download** — saves a ZIP file to your PC
 3. Upload the ZIP in the notebook when prompted — done!
 
@@ -86,26 +86,26 @@ brain_data/
 ## 🔄 Project Pipeline
 
 ```
-📥 Raw MRI Images (yes/ and no/ folders)
+ Raw MRI Images (yes/ and no/ folders)
         ↓
-🧹 Data Preprocessing
+Data Preprocessing
    • Resize to 224×224 px
    • Normalize pixel values [0, 1]
    • Train / Val / Test split (70/15/15)
         ↓
-🔄 Data Augmentation (Training only)
+ Data Augmentation (Training only)
    • Random rotation ±15°
    • Horizontal flip
    • Zoom, shear, shift
         ↓
-🏗️ Model Training
+ Model Training
    ┌─────────────────────┐    ┌──────────────────────────┐
    │   Custom CNN        │    │  VGG16 Transfer Learning  │
    │   (from scratch)    │    │  Phase 1: Frozen base     │
    │                     │    │  Phase 2: Fine-tune last 4│
    └─────────────────────┘    └──────────────────────────┘
         ↓
-📊 Evaluation
+ Evaluation
    • Accuracy, Precision, Recall, F1-score
    • Confusion Matrix
    • Training curves (Accuracy & Loss)
@@ -116,7 +116,7 @@ brain_data/
 
 ---
 
-## 🏗️ Models
+##  Models
 
 ### Model 1 — Custom CNN (Built from Scratch)
 
@@ -157,14 +157,14 @@ Dense(1) → Sigmoid → Output
 
 ---
 
-## 📊 Results
+##  Results
 
 | Model | Test Accuracy | Precision | Recall | F1-Score |
 |-------|--------------|-----------|--------|----------|
 | Custom CNN | ~85% | 0.84 | 0.85 | 0.84 |
 | **VGG16 Transfer Learning** | **~95%+** | **0.95** | **0.94** | **0.94** |
 
-> ✅ VGG16 Transfer Learning outperforms the custom CNN by ~10%, confirming the value of transfer learning on small medical imaging datasets.
+>  VGG16 Transfer Learning outperforms the custom CNN by ~10%, confirming the value of transfer learning on small medical imaging datasets.
 
 ### Training Curves
 *(Generated automatically when you run the notebook)*
@@ -190,7 +190,7 @@ Dense(1) → Sigmoid → Output
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/brain-tumor-detection.git
+git clone https://github.com/jyotipatthak/Brain-Tumor-Detection-CNN-VGG16.git
 cd brain-tumor-detection
 
 # 2. Install dependencies
@@ -223,7 +223,7 @@ jupyter
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 brain-tumor-detection/
@@ -278,7 +278,7 @@ brain-tumor-detection/
 
 ---
 
-## 🧠 Key Concepts
+##  Key Concepts
 
 <details>
 <summary><b>What is Transfer Learning?</b></summary>
@@ -318,50 +318,24 @@ With only 253 images, the model can easily memorize the training data (overfitti
 
 ---
 
-## 🏆 Resume Highlights
 
-```
-Brain Tumor Detection using CNN + VGG16 Transfer Learning
-Python | TensorFlow/Keras | OpenCV | Scikit-learn
-
-• Built a Brain Tumor Detection system using CNN and VGG16 Transfer
-  Learning on MRI images (253 images), achieving 95%+ test accuracy
-  on binary classification (Tumor / No Tumor).
-
-• Implemented two-phase fine-tuning: trained custom Dense head on
-  frozen VGG16 base (lr=1e-3), then unfroze last 4 layers at lr=1e-5
-  for domain-specific adaptation to medical MRI imaging.
-
-• Applied data augmentation (rotation, zoom, flip, shear) to address
-  class imbalance (155 tumor vs 98 no-tumor images) and reduce
-  overfitting on the small dataset.
-
-• VGG16 Transfer Learning outperformed custom CNN by ~10%, validating
-  transfer learning for small medical imaging datasets.
-
-• Evaluated using Confusion Matrix, Precision, Recall, and F1-score;
-  applied EarlyStopping and ReduceLROnPlateau callbacks for optimal
-  convergence.
-```
-
----
 
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/jyotipatthak)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/jyotipathak123)
+- GitHub: [@jyotipatthak](https://github.com/jyotipatthak)
+- LinkedIn: [jyoti pathak](https://linkedin.com/in/jyotipathak123)
 
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - Dataset by [Navoneel Chakrabarty](https://www.kaggle.com/navoneel) on Kaggle
 - VGG16 architecture by [Simonyan & Zisserman (2014)](https://arxiv.org/abs/1409.1556)
