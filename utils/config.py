@@ -1,0 +1,4 @@
+IMG_SIZE = 224
+BATCH_SIZE = 32
+EPOCHS = 10
+DATA_PATH = "data/archive"
