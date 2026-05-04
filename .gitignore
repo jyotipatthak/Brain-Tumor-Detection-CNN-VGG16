@@ -1,0 +1,39 @@
+# 🔹 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔹 Virtual Environment
+venv/
+env/
+ENV/
+
+# 🔹 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 🔹 Dataset (VERY IMPORTANT)
+data/
+*.jpg
+*.png
+*.jpeg
+
+# 🔹 Model files
+*.h5
+*.keras
+*.pkl
+
+# 🔹 Logs
+logs/
+*.log
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 VS Code
+.vscode/
+
+# 🔹 Temporary files
+temp/
+*.tmp
