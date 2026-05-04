@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 IMG_SIZE = 224
 BATCH_SIZE = 32
 EPOCHS = 10
+=======
+IMG_SIZE = 224
+BATCH_SIZE = 32
+EPOCHS = 10
+>>>>>>> 05f2a0cf494bf2db1b59f8431689f12b40618b05
 DATA_PATH = "data/archive"

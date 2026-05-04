@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 tensorflow
 numpy
 opencv-python
 scikit-learn
 seaborn
+=======
+tensorflow
+numpy
+opencv-python
+scikit-learn
+>>>>>>> 05f2a0cf494bf2db1b59f8431689f12b40618b05
